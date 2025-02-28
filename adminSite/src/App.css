@@ -1,0 +1,491 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* profile section CSS begins here */
+#profileDetails {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 21vh;
+  width: inherit;
+
+}
+
+#profileData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: 25vh;
+  /* padding: 15px; */
+  border-bottom: 2px solid #dedede;
+  /* overflow-y: scroll; */
+  font-family: "Poppins", sans-serif;
+  /* margin: 1vh 0; */
+  padding-top: 0.8vh;
+}
+
+.profileSplits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adddet {
+  padding: 3px;
+}
+
+.profileSplits img {
+  /* aspect-ratio: 1 / 1; */
+  width: 4.5vw;
+  /* height: inherit; */
+}
+
+#adminDetails ul {
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 0.8vw;
+  /* padding: 1em; */
+  font-size: 2vh;
+  margin: 0;
+  padding: 0;
+  padding-left: 1vw;
+}
+
+/* #adminDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+#graph {
+  width: 14vh;
+  height: 14vh;
+}
+
+#userStatus p {
+  font-size: 0.8vw;
+  width: fit-content;
+}
+
+/* profile section CSS ends here */
+
+/* request section CSS begins here */
+#requestsArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid green; */
+  width: inherit;
+  height: 33vh;
+  padding: 2px;
+  padding: 5px 0 5px 0;
+  /* border-top: 2px solid grey; */
+  border-bottom: 2px solid #dedede;
+  border-top: 2px solid #dedede;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+#refBtn {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-right: 3vw; */
+  width: 19vw;
+  /* font-weight:800; */
+  font-size: 1vh;
+  padding: 0.5vh 1vw;
+  border-bottom: 2px solid rgb(172, 170, 170);
+
+}
+
+#refBtn p {
+  margin: 0;
+  font-size: 2vh;
+  font-weight: 700;
+}
+
+#refBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: rgb(242, 241, 241);
+  background-color: white;
+  padding: 0.5vh 0.5vh;
+  /* border: 2px solid grey; */
+  border-radius: 50%;
+  transition-duration: 500ms;
+}
+
+#refBtn button:not(:active) {
+  /* Keep the red background for 1 second after click */
+  transition: rotate 1000ms step-end;
+}
+
+#refBtn button:active {
+  transform: rotate(360deg);
+  transition: 500ms;
+}
+
+#requestsHolder {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.displayTemplate {
+  border: 2px solid rgb(174, 174, 174, 0.3);
+  display: flex;
+  margin-top: 0.5vh;
+  justify-content: space-around;
+  align-items: center;
+  width: 18vw;
+  height: 7vh;
+  border-radius: 2vh;
+  padding: 1vh 0 1vh 0.1vw;
+}
+
+.requestersDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.displayTemplate button {
+  border-radius: 3vh;
+  padding: 0.3vh 0.8vh;
+  width: max-content;
+  font-size: 1.4vh;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.requestersDetails p {
+  margin: 2px;
+  font-size: 1.3vh;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.requestersDetails h1 {
+  /* margin: 2px; */
+  margin: 0;
+  font-size: 2.1vh;
+  font-weight: 400;
+  text-transform: capitalize
+}
+
+
+.displayTemplate img {
+  height: 4.5vh;
+  /* width: 50px; */
+  margin-right: 0.5vw;
+}
+
+/* request section CSS ends here */
+
+/* find people and find friends section CSS begins here */
+#findPeopleSection {
+  /* border: 2px solid rgb(253, 2, 2); */
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 33vh;
+  width: inherit;
+  /* border-bottom:2px solid #282c34; */
+  border-top: 2px solid #dedede;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#searchBarAreal {
+  display: flex;
+  width: 18vw;
+  padding: 8px;
+  margin: 1vh 0.5vw;
+  outline: 1px solid rgba(149, 149, 149, 0.783);
+  border-radius: 10px;
+
+  justify-content: space-between;
+  align-items: center;
+  height: 4vh;
+}
+
+
+#searchBarAreal span {
+  padding: 3px;
+  border-radius: 10%;
+  width: 1.5vw;
+}
+
+#peopleHolder {
+  width: inherit;
+  height: 23vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+#searchBarAreal span:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  /* width: 1vh; */
+  /* height: 1vh; */
+  /* border-radius: ; */
+}
+
+#searchBarAreal input {
+  border: none;
+  appearance: none;
+  width: 16.5vw;
+  background-color: white;
+}
+
+#searchBarAreal input:focus {
+  border: none;
+  appearance: none;
+  outline: none;
+  background-color: #ffffff;
+}
+
+#searchBarAreal input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+  background-color: white;
+}
+
+#searchBarAreal input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  /*your box-shadow*/
+  -webkit-text-fill-color: #333;
+}
+
+/* find people and find friends section CSS ends here */
+
+/* update teh code above */
+
+/* profile view for admin begins here */
+#profileDetailsAd {
+  /* border: 2px solid black; */
+  width: 68vw;
+  padding: 15px;
+  margin-top: 12px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.profileSplitsAd {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+}
+
+.adddetAd {
+  padding: 3px;
+}
+
+.profileSplitsAd img {
+  /* aspect-ratio: 1 / 1; */
+  width:15vh;
+  height: 15vh;
+  margin-right: 3vw;
+}
+
+#userDetailsAd ul {
+  list-style: none;
+  text-transform: capitalize;
+  font-size: large;
+  padding: 5px;
+  font-size: 2vh;
+
+}
+
+#userDetailsAd ul li {
+  text-align: left;
+  margin: 20px 10px 20px 10px;
+}
+
+#graphAd {
+  width: 20vw;
+  height: 30vh;
+}
+
+#graphStat{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#userStatusAd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#userStatusAd p{
+  font-size: larger;
+  margin: 4px 5px 4px 5px;
+}
+
+#userStatusAd p:nth-child(1){
+  background-color: rgba(73, 198, 73, 0.843);
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(219, 219, 155, 0.786);
+  width: max-content;
+  margin: auto;
+  margin-top: 4vh;
+  border-radius: 26px;
+}
+
+#control p{
+  margin: 10px 30px 10px 30px;
+  padding:10px 30px 10px 30px ;
+  font-weight: bold;
+}
+#control p:nth-child(1){
+  color: red;
+}
+
+#control p:nth-child(3){
+  color: green;
+}
+
+/* profile view for admin ends here */
+/* login css code start here*/
+#submitter,#clearer, #toggler{
+  margin-right: 15px;
+}
+
+#loginForm{
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}

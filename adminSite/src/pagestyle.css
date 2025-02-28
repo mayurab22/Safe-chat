@@ -1,0 +1,31 @@
+#outerBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftContent{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 24vw;
+    height: 93vh;
+    margin: 0 1vw 0 1vw;
+    padding: 0 0.5vw 0 0.5vw;
+    /* border: 2px solid rgb(243, 243, 60); */
+    border-right:  2px solid #ccccc9;
+    /* position: sticky; */
+}
+
+
+#rightContent{
+    display: flex;
+    flex-direction: column;
+    width: 72vw;
+    height: 93vh;
+    margin: 0 1vw 0 1vw;
+    padding: 0 0.5vw 0 0.5vw;
+    border: 2px solid rgb(149, 255, 0);
+}
+
+
